@@ -1,0 +1,135 @@
+####Conky.rc#####
+# set to yes if you want Conky to be forked in the background
+background no
+cpu_avg_samples 2
+net_avg_samples 2
+out_to_console no
+# Use Xft?
+use_xft yes
+# Xft font when Xft is enabled
+xftfont Bitstream Vera Sans Mono:size=8
+# Text alpha when using Xft
+xftalpha 0.8
+on_bottom yes
+# Update interval in seconds
+update_interval 1
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+own_window_transparent yes
+own_window_type normal
+own_window_hints undecorated,below,skip_taskbar,sticky
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+# Minimum size of text area
+minimum_size 270 5
+maximum_width 270
+# Draw shades?
+draw_shades no
+# Draw outlines?
+draw_outline no
+# Draw borders around text
+draw_borders no
+# Stippled borders?
+stippled_borders yes
+# border margins
+border_margin 4
+# border width
+border_width 1
+# Default colors and also border colors
+default_color darkgrey
+default_shade_color black
+default_outline_color red
+# Text alignment, other possible values are commented
+gap_x 15
+gap_y 30
+alignment top_right
+# Gap between borders of screen and text
+# Add spaces to keep things from moving about? This only affects certain objects.
+use_spacer no
+# Subtract file system buffers from used memory?
+no_buffers yes
+# set to yes if you want all text to be in uppercase
+uppercase no
+# boinc (seti) dir
+seti_dir /usr/lib/boinc-app-seti/setiathome_enhanced
+TEXT
+${font Ubuntu:style=bold:size=18}${time %H:%M}${font} 
+${font Ubuntu: size=6}${time %A %e %B %Y}
+${font Ubuntu:style=bold:size=10 color}Operative System $hr
+${font Ubuntu:size=8}${execi 1000 cat /proc/cpuinfo | grep 'model name' | sed -e 's/model name.*: //'| uniq} 
+${color #42AE4A}$sysname $kernel $machine - $nodename
+Host: ${color lightgrey} $nodename ${color #42AE4A} Uptime:${color lightgrey} $uptime ${color #42AE4A}
+Load:${color lightgrey} $loadavg
+${color lightgrey}${hr}
+#
+# THE BATTERY STATUS IS NOT CORRECT or IT DOESN'T WORK AT ALL???
+# Write the following line in your terminal emulator
+#
+# $ ls /proc/acpi/battery
+#
+# In my laptop, the answer is 
+# 
+# $ BAT0
+#
+# If you obtain another answer, replace every BAT0 in the following lines with the correct word (for example, BAT1, BAT1 ecc...)
+# Close conky and open it again. the Battery Bar should show the correct status
+#
+${font Ubuntu:style=bold:size=8}Battery Status $hr
+${font Ubuntu:size=7}${battery BAT0}${color #FFF}${battery_bar BAT0 5,80}
+Time Remaining: $alignr ${battery_time}
+# End of the part involving the battery. 
+# If your machine isn't a laptop, you can delete this three lines
+${font Ubuntu:style=bold:size=8}Processors $hr ${font Ubuntu:size=7}
+Usage (Avg):${color #42AE4A} ${freq_g}Ghz ${color lightgrey}${cpu cpu0}% ${alignr}${color0}${cpubar cpu0 5,140}
+${color #42a34a}Core 1:${color #42AE4A} ${freq_g cpu1}Ghz ${color lightgrey}${cpu cpu1}% ${alignr}${color0}${cpubar cpu1 5,140}
+Core 2:${color #42AE4A} ${freq_g cpu2}Ghz ${color lightgrey}${cpu cpu2}% ${alignr}${color0}${cpubar cpu2 5,140}
+${color #42AE4A}Average:
+$color0 ${cpugraph cpu0 00ff00 42AE4A -t}
+${color #42AE4A}Processes:${color lightgrey} $processes ${color #42AE4A}Run:${color lightgrey} $running_processes ${color #42AE4A}CPU Temp:${color lightgrey} $alignr ${acpitemp}°C
+${color #42AE4A}Core 0 Tmp: ${color lightgrey}${exec sensors | grep 'Core 0' | awk '{print $3}' | cut -c2-3}°C ${color #42AE4A} Core 1 Tmp: ${color lightgrey} ${exec sensors | grep 'Core 0' | awk '{print $3}' | cut -c2-3}°C
+#
+${font Ubuntu:style=bold:size=8}Memory&Disks $hr
+${font Ubuntu:size=7}ROOT $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
+${fs_bar /}
+RAM $alignc $mem / $memmax $alignr $memperc% 
+${membar} 
+SWAP $alignc $swap / $swapmax $alignr $swapperc%
+$swapbar
+DATA $alignc ${fs_used /media/DATA} / ${fs_size /media/DATA} $alignr ${fs_used_perc /media/DATA}%
+${fs_bar /media/DATA}
+#
+${font Ubuntu:style=bold:size=7}${color lightgrey}Disk I/O ${diskio} ${hr 2} ${font Ubuntu:size=7}
+${color lightgrey}Read: $alignr${color}${diskiograph_read 8,240 111111 00316E -t -l}
+${color lightgrey}Write: $alignr${color}${diskiograph_write 8,240 111111 00316E -t -l}
+#Network Info
+# Ethernet utilization
+${color1}NETWORKING ${hr 2}$color
+${color0}Wired (${addr eth0})
+${color0}Down:$color ${downspeed eth0}/s ${alignr}${color0}Up:$color ${upspeed eth0}/s
+${color0}Total:$color ${totaldown eth0} ${alignr}${color0}Total: $color${totalup eth0}
+${color0}${downspeedgraph eth0 20,120 000000 00ff00} ${alignr}${upspeedgraph eth0 20,120 000000 ff0000}$color
+${stippled_hr 2}
+${color0}Wireless (${addr wlan0})
+${color0}Down:$color ${downspeed wlan0}/s ${alignr}${color0}Up:$color ${upspeed wlan0}/s
+${color0}Total:$color ${totaldown wlan0} ${alignr}${color0}Total: $color${totalup wlan0}
+${color0}${downspeedgraph wlan0 20,120 000000 00ff00} ${alignr}${upspeedgraph wlan0 20,120 000000 ff0000}$color
+#Top Process
+# the following final lines explain wich are the most expensive precesses in your pc actually
+#if you aren't interested in, delete all the following lines
+${font Ubuntu:style=bold:size=8}Top CPU processes $hr ${font Ubuntu:size=7}
+${top name 1}$alignr${top cpu 1}%
+${top name 2}$alignr${top cpu 2}%
+${top name 3}$alignr${top cpu 3}%
+${top name 4}$alignr${top cpu 4}%
+${top name 5}$alignr${top cpu 5}%
+${top name 6}$alignr${top cpu 6}%
+#
+${font Ubuntu:style=bold:size=8}Top RAM processes $hr
+${font Ubuntu:size=7}${top_mem name 1}$alignr${top_mem mem 1}%
+${top_mem name 2}$alignr${top_mem mem 2}%
+${top_mem name 3}$alignr${top_mem mem 3}%
+${top_mem name 4}$alignr${top_mem mem 4}%
+${top_mem name 5}$alignr${top_mem mem 5}%
+${top_mem name 6}$alignr${top_mem mem 6}%
+
+
