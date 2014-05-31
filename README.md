@@ -49,12 +49,16 @@ Top 6 Procesos Utilizando RAM
 
 ## Archivo de configuracion de Tmux.
 Habilitar consola a 256 Colores, sino ingresar como tmux -2
+----
 Barra de estatus:
+	-----
 	Panel Derecho:
 		Nombre de sesion: ID ventana : ID panel
+	-----
 	Panel Central:
 		Numero de Ventana: Nombre de Ventana
 	*Actividad en segundo Plano Resalta
+	-----
 	Panel Izquierdo:
 		Nombre del equipo: Fecha completa : Hora
 
