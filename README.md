@@ -1,4 +1,5 @@
 Archivo de configuracion de conky.
+* nota: los archivos de configuracion no se han actualizado a la version 2.1 de tmux
 =========
 
 Requisitos: 
