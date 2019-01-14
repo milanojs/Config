@@ -1,0 +1,9 @@
+host *
+  user jmilano
+  Compression yes
+  ConnectTimeout 3
+  LogLevel DEBUG
+  ServerAliveInterval 120
+  ServerAliveCountMax 5
+  TCPKeepAlive yes
+
