@@ -94,8 +94,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-alias gfa="git getch --all"
+
+alias gfa="git fetch --all"
 alias gpa="git pull --all"
 alias tfmt="terraform fmt"
 alias gtc="git checkout"
 alias gtps="git push"
+alias gtcl="git clone"
+alias gtcm="git commit -m"
+alias gta="git add"
+
