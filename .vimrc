@@ -1,4 +1,4 @@
-colorscheme delek
+colorscheme desert
 set number
 set cursorline
 
