@@ -95,6 +95,7 @@ source $ZSH/oh-my-zsh.sh
 source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+alias llaht="ls -lath"
 alias gfa="git fetch --all"
 alias gpa="git pull --all"
 alias tfmt="terraform fmt"
@@ -116,6 +117,7 @@ alias kbgn="kubectl get namespaces"
 alias kbgp="kubectl get pods"
 alias kbgs="kubectl get secrets"
 alias kbgsv="kubectl get services"
+alias kbdsc="kubectl describe"
 alias kbl="kubectl log"
 alias kblf="kubectl log -f"
 alias kblt="kubectl log --tail="
@@ -124,4 +126,3 @@ alias kbsetctx="kubectl config set-context --current --namespace="
 alias srczsh="source ~/.zshrc"
 alias mksta="minikube start"
 alias mksto="minikube stop"
-
