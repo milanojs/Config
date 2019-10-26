@@ -95,6 +95,7 @@ source $ZSH/oh-my-zsh.sh
 source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+######## Begin Alias ########
 alias llaht="ls -lath"
 alias gfa="git fetch --all"
 alias gpa="git pull --all"
@@ -126,3 +127,4 @@ alias kbsetctx="kubectl config set-context --current --namespace="
 alias srczsh="source ~/.zshrc"
 alias mksta="minikube start"
 alias mksto="minikube stop"
+######## End Alias ########
