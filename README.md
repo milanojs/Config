@@ -38,14 +38,11 @@ Disk I/O Kb/s:
 ----
 Red:
 ----
-    Tarjeta de red cableada: IP
-    Velocidad Bajada      Velocidad de Subida
-    Total: 		      Total:
-    Grafica 	      Grafica
-    Tarjeta de red Inalambrica: IP
-    Velocidad Bajada      Velocidad de Subida
-    Total:                Total:
-    Grafica               Grafica
+| Tarjeta                    | IP                      | Velocidad Bajada  | Velocidad de Subia | Total | Graphica |
+| -------------------------- | ----------------------- | ----------------- | ------------------ | ----- | -------- |
+| Tarjeta de red Cableada    |                         |                   |                    |       |          |    
+| Tarjeta de red Inalambrica |                         |                   |                    |       |          |
+   
 Procesos:
 ----
     Top 6 Procesos Utilizando CPU
@@ -68,4 +65,3 @@ Barra de estatus:
 	-----
 	Panel Izquierdo:
 		Nombre del equipo: Fecha completa : Hora
-
