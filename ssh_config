@@ -1,0 +1,10 @@
+#Configuration file for the config of your outgoing connections to the world
+#for linux change the name of the file to "config and copy it to $HOME/.ssh/config
+# that will do the job, on mac ~/.ssh/config
+host *
+  Compression yes
+  ConnectTimeout 3
+  LogLevel DEBUG
+  ServerAliveInterval 120
+  ServerAliveCountMax 5
+  TCPKeepAlive yes
