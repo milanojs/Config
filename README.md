@@ -3,12 +3,17 @@ Archivo de configuracion de conky
 
 * nota: los archivos de configuracion no se han actualizado a la version 2.1 de tmux
 
-Requisitos: 
+Requisitos
 ----
+
 ```lm-sensors```
+
 * Nota: cambiar la configuacion de acuerdo a la cantidad de procesadores que tengan
-### Imagen
-<span style="display:block;text-align:center">![Philadelphia's Magic Gardens. This place was so cool!](/screens/ScreenConky_2016.png "Conky Layout")</span>
+
+Imagen
+----
+
+<span style="display:block;text-align:center">![Conky config dashboard!](/screens/ScreenConky_2016.png "Conky Layout")</span>
 
 
 Layout:
@@ -63,6 +68,9 @@ Procesos:
 
 
 ## Archivo de configuracion de Tmux.
+
+
+<span style="display:block;text-align:center">![tmux main screen](/screens/Tmux%203.png "Tmux Main Screen")</span>
 
 ----
 * Habilitar consola a 256 Colores, sino ingresar como tmux -2
