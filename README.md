@@ -4,8 +4,9 @@ Archivo de configuracion de conky.
 
 Requisitos: 
 ----
-    lm-sensors.
+```lm-sensors```
 * Nota: cambiar la configuacion de acuerdo a la cantidad de procesadores que tengan
+### Imagen
 Layout:
 ----
     Hora:
@@ -35,25 +36,30 @@ Disk I/O Kb/s:
 ----
     Grafica Lectura
     Grafica Escritura
+
 ----
 Red:
 ----
-    Tarjeta de red cableada: IP
-    Velocidad Bajada      Velocidad de Subida
-    Total: 		      Total:
-    Grafica 	      Grafica
-    Tarjeta de red Inalambrica: IP
-    Velocidad Bajada      Velocidad de Subida
-    Total:                Total:
-    Grafica               Grafica
+| Indicator                     | Description           |
+| :---                          |                   ---:|
+| Tarjeta de red cableada       | IP                    |
+| Velocidad Bajada              | Velocidad de Subida   |
+| Total:                        | Total:                |
+| Grafica                       | Text                  |
+| Tarjeta de red Inalambrica    | IP                    |
+|Grafica                        | Grafica               |
+|Tarjeta de red Inalambrica:    | IP                    |
+|Velocidad Bajada               | Velocidad de Subida   |
+|Total:                         | Total:                |
+|Grafica                        | Grafica               |
 Procesos:
 ----
     Top 6 Procesos Utilizando CPU
     Top 6 Procesos Utilizando RAM
 
 
-
 ## Archivo de configuracion de Tmux.
+
 ----
 * Habilitar consola a 256 Colores, sino ingresar como tmux -2
 
@@ -69,3 +75,4 @@ Barra de estatus:
 	Panel Izquierdo:
 		Nombre del equipo: Fecha completa : Hora
 
+### Configuracion de ssh
