@@ -1,5 +1,6 @@
-Archivo de configuracion de conky.
+Archivo de configuracion de conky
 =========
+
 * nota: los archivos de configuracion no se han actualizado a la version 2.1 de tmux
 
 Requisitos: 
@@ -7,6 +8,9 @@ Requisitos:
 ```lm-sensors```
 * Nota: cambiar la configuacion de acuerdo a la cantidad de procesadores que tengan
 ### Imagen
+<span style="display:block;text-align:center">![Philadelphia's Magic Gardens. This place was so cool!](/screens/ScreenConky_2016.png "Conky Layout")</span>
+
+
 Layout:
 ----
     Hora:
