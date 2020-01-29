@@ -1,0 +1,11 @@
+pane	0	1	:zsh	1	:*	1	:/Users/juan.milano/Documents	1	zsh	:
+pane	2	1	:zsh	0	:#	1	:/Users/juan.milano/Documents/Packpub/Go/MasteringGo	1	zsh	:
+pane	2	2	:zsh	0	:-	1	:/Users/juan.milano/Documents/globant-udemy/gitlab/my-static-web-site	1	zsh	:
+pane	2	3	:zsh	0	:#	1	:/Users/juan.milano/Documents/globant-udemy/gitlab/my-static-web-site	1	zsh	:
+pane	2	4	:zsh	1	:*	1	:/private/tmp/my-static-website	1	zsh	:
+window	0	1	1	:*	bc5e,278x62,0,0,1
+window	2	1	0	:#	bc5f,278x62,0,0,2
+window	2	2	0	:-	bc60,278x62,0,0,3
+window	2	3	0	:#	bc61,278x62,0,0,4
+window	2	4	1	:*	bc63,278x62,0,0,6
+state	2	0

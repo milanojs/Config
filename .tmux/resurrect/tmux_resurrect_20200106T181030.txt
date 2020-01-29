@@ -1,0 +1,9 @@
+pane	0	1	:zsh	1	:*	1	:/Users/juan.milano/Documents	1	zsh	:
+pane	2	1	:zsh	0	:	1	:/Users/juan.milano/Documents/Packpub/Go/MasteringGo	1	zsh	:
+pane	2	2	:zsh	0	:-	1	:/Users/juan.milano/Documents/globant-udemy/gitlab	1	zsh	:
+pane	2	3	:zsh	1	:*	1	:/Users/juan.milano/Documents/globant-udemy/gitlab	1	zsh	:
+window	0	1	1	:*	ba7e,142x53,0,0,1
+window	2	1	0	:	d460,278x68,0,0,3
+window	2	2	0	:-	d463,278x68,0,0,6
+window	2	3	1	:*	d464,278x68,0,0,7
+state	2	

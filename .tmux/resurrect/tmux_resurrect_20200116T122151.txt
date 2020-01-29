@@ -1,0 +1,7 @@
+pane	2	1	:zaplabs-src	1	:*	1	:/Users/juan.milano/Documents/zaplabs/pipeline	1	zsh	:
+pane	2	2	:MasteringGo	0	:#	1	:/Users/juan.milano/Documents/Packpub/Go/MasteringGo	1	zsh	:
+pane	2	3	:MasteringGo	0	:-	1	:/Users/juan.milano/Documents/Packpub/Go/go-the-complete-developers-guide-to-golang	1	zsh	:
+window	2	1	1	:*	c17f,182x64,0,0,2
+window	2	2	0	:#	c180,182x64,0,0,3
+window	2	3	0	:-	60f0,182x64,0,0,11
+state	2	

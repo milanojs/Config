@@ -1,0 +1,13 @@
+pane	0	1	:zsh	1	:*	1	:/Users/juan.milano/Documents	1	zsh	:
+pane	2	1	:zaplabs-src	0	:#	1	:/Users/juan.milano/Documents/zaplabs/pipeline	1	zsh	:
+pane	2	2	:MasteringGo	0	:#-	1	:/Users/juan.milano/Documents/Packpub/Go/MasteringGo	1	zsh	:
+pane	2	3	:MasteringGo	1	:*	1	:/Users/juan.milano/Documents/Packpub/Go/go-the-complete-developers-guide-to-golang	1	zsh	:
+pane	2	4	:ecs	0	:#	1	:/Users/juan.milano/Documents/globant-udemy/aws-ecs-deep-insight	1	zsh	:
+pane	4	1	:zsh	1	:*	1	:/Users/juan.milano/Documents/zaplabs/pipeline	1	zsh	:
+window	0	1	1	:*	c43e,151x27,0,0,1
+window	2	1	0	:#	c43f,151x27,0,0,2
+window	2	2	0	:#-	c440,151x27,0,0,3
+window	2	3	1	:*	6250,151x27,0,0,11
+window	2	4	0	:#	6251,151x27,0,0,12
+window	4	1	1	:*	e57f,200x29,0,0,20
+state	4	2

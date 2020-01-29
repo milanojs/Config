@@ -1,0 +1,9 @@
+window	0	1	0	:	c89e,204x47,0,0,1
+window	0	2	0	:-	c8a5,204x47,0,0,8
+window	0	3	1	:*	647f,204x47,0,0,10
+window	2	1	1	:*	bc5f,278x24,0,0,2
+window	2	2	0	:	bc60,278x24,0,0,3
+window	2	3	0	:	bc61,278x24,0,0,4
+window	2	4	0	:-	bc62,278x24,0,0,5
+window	3	1	1	:*	bc63,278x24,0,0,6
+state	0	3

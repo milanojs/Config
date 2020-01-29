@@ -1,0 +1,9 @@
+pane	2	1	:zaplabs-src	0	:	1	:/Users/juan.milano/Documents/zaplabs/pipeline	1	zsh	:
+pane	2	2	:udemy	0	:-	1	:/Users/juan.milano/Documents/tutorialpoint	1	zsh	:
+pane	2	3	:MasteringGo	0	:	1	:/Users/juan.milano/Documents/Packpub	1	zsh	:
+pane	2	4	:zsh	1	:*	1	:/Users/juan.milano/Documents/qwiklabs/Building-and-Deploying-Containers-Using-Amazon-Elastic-Container-Service	1	zsh	:
+window	2	1	0	:	c7bf,154x56,0,0,2
+window	2	2	0	:-	c7c0,154x56,0,0,3
+window	2	3	0	:	6410,154x56,0,0,11
+window	2	4	1	:*	e411,154x56,0,0,22
+state	2	

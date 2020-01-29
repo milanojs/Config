@@ -1,0 +1,9 @@
+pane	0	1	:zsh	1	:*	1	:/Users/juan.milano/Documents	1	zsh	:
+pane	2	1	:zsh	1	:*	1	:/Users/juan.milano/Documents/zaplabs/bin	1	zsh	:
+pane	2	2	:zsh	0	:-	1	:/Users/juan.milano/Documents/Packpub/Go/MasteringGo	1	zsh	:
+pane	2	3	:zsh	0	:	1	:/Users/juan.milano/Documents/Packpub/Go/go-the-complete-developers-guide-to-golang	1	zsh	:
+window	0	1	1	:*	bc5e,278x62,0,0,1
+window	2	1	1	:*	c2ff,318x64,0,0,2
+window	2	2	0	:-	c300,318x64,0,0,3
+window	2	3	0	:	61b0,318x64,0,0,11
+state	2	0

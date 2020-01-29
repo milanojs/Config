@@ -1,0 +1,17 @@
+pane	0	1	:zaplabs-src	1	:*	1	:/Users/juan.milano/Documents/zaplabs/ECI/pipeline	1	zsh	:
+pane	0	2	:remote-sh	0	:#	1	:/Users/juan.milano	1	zsh	:
+pane	0	3	:zsh	0	:-	1	:/Users/juan.milano/Documents/Golang/gofordevops	1	zsh	:
+pane	0	4	:vscode-term	0	:	1	:/Users/juan.milano	1	zsh	:
+pane	2	1	:udemy	1	:*	1	:/Users/juan.milano/Documents/zaplabs/ECI/pipeline	1	zsh	:
+pane	2	2	:udemy	0	:#	1	:/Users/juan.milano/Documents/tutorialpoint	1	zsh	:
+pane	2	3	:MasteringGo	0	:#	1	:/Users/juan.milano/Documents/Packpub/Go/MasteringGo	1	zsh	:
+pane	2	4	:zsh	0	:#-	1	:/Users/juan.milano/Documents/zaplabs/ECI/pipeline	1	zsh	:
+window	0	1	1	:*	be7e,165x25,0,0,1
+window	0	2	0	:#	be7f,165x25,0,0,2
+window	0	3	0	:-	be80,165x25,0,0,3
+window	0	4	0	:	be86,165x25,0,0,9
+window	2	1	1	:*	ae81,165x21,0,0,4
+window	2	2	0	:#	ae82,165x21,0,0,5
+window	2	3	0	:#	ae83,165x21,0,0,6
+window	2	4	0	:#-	ae84,165x21,0,0,7
+state	0	

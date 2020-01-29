@@ -1,0 +1,7 @@
+pane	2	1	:zaplabs-src	0	:	1	:/Users/juan.milano/Documents/zaplabs/pipeline	1	zsh	:
+pane	2	2	:udemy	1	:*	1	:/Users/juan.milano/Documents/tutorialpoint	1	zsh	:
+pane	2	3	:MasteringGo	0	:-	1	:/Users/juan.milano/Documents/Packpub	1	zsh	:
+window	2	1	0	:	c7bf,154x56,0,0,2
+window	2	2	1	:*	c7c0,154x56,0,0,3
+window	2	3	0	:-	6410,154x56,0,0,11
+state	2	

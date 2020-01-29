@@ -1,0 +1,9 @@
+pane	2	1	:zaplabs-src	1	:*	1	:/Users/juan.milano/Documents/zaplabs/ECI/pipeline	1	zsh	:
+pane	2	2	:udemy	0	:	1	:/Users/juan.milano/Documents/tutorialpoint	1	zsh	:
+pane	2	3	:MasteringGo	0	:-	1	:/Users/juan.milano/Documents/Packpub/Go/MasteringGo	1	zsh	:
+pane	2	4	:zsh	0	:	1	:/Users/juan.milano/Documents/zaplabs/ECI/pipeline	1	zsh	:
+window	2	1	1	:*	ad9f,225x21,0,0,2
+window	2	2	0	:	ada0,225x21,0,0,3
+window	2	3	0	:-	ada1,225x21,0,0,4
+window	2	4	0	:	ada4,225x21,0,0,7
+state	2	

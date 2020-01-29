@@ -1,0 +1,17 @@
+pane	0	1	:zaplabs-src	0	:-	1	:/Users/juan.milano/Documents/zaplabs/ECI/pipeline	1	zsh	:
+pane	0	2	:shell	0	:	1	:/Users/juan.milano/.ssh	1	zsh	:
+pane	0	3	:zsh	1	:*	1	:/Users/juan.milano/Downloads	1	zsh	:
+pane	2	1	:udemy	1	:*	1	:/Users/juan.milano/Documents/zaplabs/ECI/pipeline	1	zsh	:
+pane	2	2	:udemy	0	:	1	:/Users/juan.milano/Documents/tutorialpoint	1	zsh	:
+pane	2	3	:MasteringGo	0	:	1	:/Users/juan.milano/Documents/Packpub/Go/MasteringGo	1	zsh	:
+pane	2	4	:zsh	0	:-	1	:/Users/juan.milano/Documents/zaplabs/ECI/pipeline	1	zsh	:
+pane	3	1	:MasteringGo	1	:*	1	:/Users/juan.milano	1	zsh	:
+window	0	1	0	:-	cc5e,278x47,0,0,1
+window	0	2	0	:	cc64,278x47,0,0,7
+window	0	3	1	:*	cc65,278x47,0,0,8
+window	2	1	1	:*	bc5f,278x24,0,0,2
+window	2	2	0	:	bc60,278x24,0,0,3
+window	2	3	0	:	bc61,278x24,0,0,4
+window	2	4	0	:-	bc62,278x24,0,0,5
+window	3	1	1	:*	bc63,278x24,0,0,6
+state	0	3
