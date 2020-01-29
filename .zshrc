@@ -138,5 +138,6 @@ alias mksta="minikube start"
 alias mksto="minikube stop"
 alias goru="go run "
 alias gotv="go test -v"
+alias gotvc="go test -v -cover"
 
 ######## End Alias ########
