@@ -96,7 +96,7 @@ source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ######## Begin Alias ########
-alias llaht="ls -lath"
+alias llath="ls -lath"
 alias gfa="git fetch --all"
 alias gpa="git pull --all"
 alias tfmt="terraform fmt"
@@ -105,7 +105,7 @@ alias tfmp="terraform plan"
 alias gtc="git checkout"
 alias gtcb="git checkout -b"
 alias gtrh="git reset --hard"
-alias gtrhd="git reset --hard HEAD~"
+alias gtrhd1="git reset --hard HEAD~1"
 alias gtsta="git stash"
 alias gtstap="git stash pop"
 alias gtps="git push"
@@ -131,9 +131,12 @@ alias kbl="kubectl log"
 alias kblf="kubectl log -f"
 alias kblt="kubectl log --tail="
 alias kbexi="kubectl exec -it"
-alias kbgtctx="kubectl config get-contexts"
 alias kbsetctx="kubectl config set-context --current --namespace="
+alias kbgtctx="kubectl config get-contexts"
 alias srczsh="source ~/.zshrc"
 alias mksta="minikube start"
 alias mksto="minikube stop"
+alias goru="go run "
+alias gotv="go test -v"
+
 ######## End Alias ########
