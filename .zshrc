@@ -114,6 +114,7 @@ alias gtsh="git show"
 alias gtb="git branch"
 alias gtba="git branch -a"
 alias gtbl="git branch -l"
+alias gtbr="git branch -r"
 alias gtr="git remote"
 alias gtrv="git remote -v"
 alias gtl="git log"
@@ -134,10 +135,16 @@ alias kbexi="kubectl exec -it"
 alias kbsetctx="kubectl config set-context --current --namespace="
 alias kbgtctx="kubectl config get-contexts"
 alias srczsh="source ~/.zshrc"
+## Minikube
 alias mksta="minikube start"
 alias mksto="minikube stop"
+## Golang
 alias goru="go run "
 alias gotv="go test -v"
 alias gotvc="go test -v -cover"
+## Docker
+alias dkpsa="docker ps -a"
+alias dkimg="docker images"
+alias dkimga="docker images -a"
 
 ######## End Alias ########
