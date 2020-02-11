@@ -142,6 +142,7 @@ alias mksto="minikube stop"
 alias goru="go run "
 alias gotv="go test -v"
 alias gotvc="go test -v -cover"
+alias gobdot="go build ."
 ## Docker
 alias dkpsa="docker ps -a"
 alias dkimg="docker images"
