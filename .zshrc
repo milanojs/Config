@@ -122,6 +122,7 @@ alias gtcl="git clone"
 alias gtcm="git commit -m"
 alias gtcam="git commit --amend"
 alias gta="git add"
+## Kubernetes
 alias kb="kubectl"
 alias kbgn="kubectl get namespaces"
 alias kbgp="kubectl get pods"
@@ -143,9 +144,15 @@ alias goru="go run "
 alias gotv="go test -v"
 alias gotvc="go test -v -cover"
 alias gobdot="go build ."
+alias gobu="go build"
 ## Docker
 alias dkpsa="docker ps -a"
 alias dkimg="docker images"
 alias dkimga="docker images -a"
+
+######## End Alias ########
+#Export default aws region
+export AWS_REGION=us-west-2
+
 
 ######## End Alias ########
