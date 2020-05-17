@@ -94,7 +94,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 ######## Begin Alias ########
 alias llath="ls -lath"
 alias gfa="git fetch --all"
@@ -153,6 +152,13 @@ alias dkimga="docker images -a"
 ######## End Alias ########
 #Export default aws region
 export AWS_REGION=us-west-2
+### Autocomplete aws
 
+autoload bashcompinit && bashcompinit
+complete -C '/usr/local/bin/aws_completer' aws
+AWS_REGION=us-west-2
+AWS_PAGER=""
 
-######## End Alias ########
+#Ignore history
+HISTORY_IGNORE="(pwd|exit|cd ..|AWS_|env|clear|whoami|srczsh|tmux -2|gst|ls -laht)"
+
