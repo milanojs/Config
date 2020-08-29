@@ -98,6 +98,7 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias llath="ls -lath"
 alias gfa="git fetch --all"
 alias gpa="git pull --all"
+alias tfmi="terraform init"
 alias tfmt="terraform fmt"
 alias tfmv="terraform validate"
 alias tfmp="terraform plan"
@@ -149,6 +150,11 @@ alias gobu="go build"
 alias dkpsa="docker ps -a"
 alias dkimg="docker images"
 alias dkimga="docker images -a"
+
+## tmux
+alias tmx="tmux -2"
+alias tmxa="tmux -2 a -t"
+alias tmxls="tmux ls"
 
 ######## End Alias ########
 #Export default aws region
