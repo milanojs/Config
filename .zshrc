@@ -96,6 +96,7 @@ source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ######## Begin Alias ########
 alias llath="ls -lath"
+alias llath="ls -lath"
 alias gfa="git fetch --all"
 alias gpa="git pull --all"
 alias tfmi="terraform init"
@@ -118,7 +119,7 @@ alias gtbr="git branch -r"
 alias gtr="git remote"
 alias gtrv="git remote -v"
 alias gtl="git log"
-alias gtlo="git log --online"
+alias gtlo="git log --oneline"
 alias gtcl="git clone"
 alias gtcm="git commit -m"
 alias gtcam="git commit --amend"
@@ -168,4 +169,5 @@ AWS_PAGER=""
 
 #Ignore history
 HISTORY_IGNORE="(pwd|exit|cd ..|AWS_|env|clear|whoami|srczsh|tmux -2|gst|ls -laht)"
+
 
