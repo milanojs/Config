@@ -124,33 +124,77 @@ alias gtcl="git clone"
 alias gtcm="git commit -m"
 alias gtcam="git commit --amend"
 alias gta="git add"
+
 ## Kubernetes
 alias kb="kubectl"
 alias kbgn="kubectl get namespaces"
 alias kbgp="kubectl get pods"
+alias kbgpa="kubectl get pods -A"
+alias kbgpn="kubectl get pods -n"
 alias kbgs="kubectl get secrets"
-alias kbgsv="kubectl get services"
+alias kbgsa="kubectl get secrets -A"
+alias kbgsn="kubectl get secrets -n"
+alias kbgd="kubectl get deployments"
+alias kbgda="kubectl get deployments -A"
+alias kbgdn="kubectl get deployments -n"
+alias kbgsvc="kubectl get services"
+alias kbgsvca="kubectl get services -A"
+alias kbgsvcn="kubectl get services -n"
 alias kbdsc="kubectl describe"
-alias kbl="kubectl log"
-alias kblf="kubectl log -f"
-alias kblt="kubectl log --tail="
+alias kbapf="kubectl apply -f "
+alias kbdf="kubectl delete -f "
+alias kbl="kubectl logs"
+alias kblf="kubectl logs -f"
+alias kblt="kubectl logs --tail="
 alias kbexi="kubectl exec -it"
 alias kbsetctx="kubectl config set-context --current --namespace="
 alias kbgtctx="kubectl config get-contexts"
+
+## gcloud Alias
+alias gc="gcloud "
+alias gcal="gcloud auth list"
+alias gcpl="gcloud projects list"
+alias gccps="gcloud config projects set "
+alias gcalg="gcloud auth login "
+alias gcadl="gcloud auth application-default login "
+alias gccil="gcloud compute instances list "
+alias gccs="gcloud compute ssh "
+alias gccsi="gcloud compute ssh --internal-ip "
+alias gckcl="gcloud container clusters list "
+
+## gcloud Alias
+alias gc="gcloud "
+alias gcal="gcloud auth list"
+alias gcpl="gcloud projects list"
+alias gccps="gcloud config projects set "
+alias gcalg="gcloud auth login "
+alias gcadl="gcloud auth application-default login "
+alias gccil="gcloud compute instances list "
+alias gccs="gcloud compute ssh "
+alias gccsi="gcloud compute ssh --internal-ip "
+alias gckcl="gcloud container clusters list "
+
+## Load Alias
 alias srczsh="source ~/.zshrc"
+
+
 ## Minikube
 alias mksta="minikube start"
 alias mksto="minikube stop"
+alias mkdel="minikube delete"
+
 ## Golang
 alias goru="go run "
 alias gotv="go test -v"
 alias gotvc="go test -v -cover"
 alias gobdot="go build ."
 alias gobu="go build"
+
 ## Docker
 alias dkpsa="docker ps -a"
 alias dkimg="docker images"
 alias dkimga="docker images -a"
+alias dkrmi="docker rmi"
 
 ## tmux
 alias tmx="tmux -2"
