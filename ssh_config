@@ -8,3 +8,5 @@ host *
   ServerAliveInterval 120
   ServerAliveCountMax 5
   TCPKeepAlive yes
+  ForwardX11 yes
+
