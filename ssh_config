@@ -3,10 +3,13 @@
 # that will do the job, on mac ~/.ssh/config
 host *
   Compression yes
-  ConnectTimeout 3
+  ConnectTimeout 5
   LogLevel DEBUG
-  ServerAliveInterval 120
-  ServerAliveCountMax 5
+  ServerAliveInterval 180
+  ServerAliveCountMax 7
   TCPKeepAlive yes
   ForwardX11 yes
+  StrictHostKeyChecking no
+  ControlMaster auto
+  ControlPersist yes
 
