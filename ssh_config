@@ -1,15 +1,29 @@
 #Configuration file for the config of your outgoing connections to the world
 #for linux change the name of the file to "config and copy it to $HOME/.ssh/config
 # that will do the job, on mac ~/.ssh/config
-host *
-  Compression yes
-  ConnectTimeout 5
-  LogLevel DEBUG
-  ServerAliveInterval 180
-  ServerAliveCountMax 7
-  TCPKeepAlive yes
-  ForwardX11 yes
-  StrictHostKeyChecking no
-  ControlMaster auto
-  ControlPersist yes
 
+Host *
+  Compression yes                           # Enable compression for SSH traffic
+  ConnectTimeout 10                          # Set a timeout of 5 seconds for establishing connections
+  ConnectionAttempts 2                   # Try twice to connect before giving up
+
+  LogLevel INFO                            # Set log level to DEBUG for detailed output, INFO or ERROR 
+  ServerAliveInterval 180                   # Send a keep-alive message every 180 seconds (3 minutes)
+  ServerAliveCountMax 7                     # Disconnect after 7 failed keep-alive messages (1260 seconds or 21 minutes)
+  TCPKeepAlive yes                          # Enable TCP-level keep-alive messages
+  ForwardX11 yes                            # Enable X11 forwarding (allow graphical apps from remote server)
+  StrictHostKeyChecking no                  # Automatically accept new host keys (use with caution)
+  
+  # ControlMaster and ControlPersist settings for connection sharing
+  ControlMaster auto                        # Enable connection sharing (reuse the master connection for new sessions)
+  ControlPersist yes                        # Keep the master connection open after the first session ends (until no clients are using it)
+  ControlPath ~/.ssh/ssh_mux_%h_%p_%r       # Set a custom ControlPath to store the multiplexed connection (replace with your path)
+
+  # SSH specific optimization
+  IPQoS lowdelay throughput              # Balance between latency and throughput
+
+  # Ciphers that balance security and performance
+  Ciphers chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr
+  
+  # Instruct SSH to try IPv4 first to avoid delays with IPv6 timeouts
+  AddressFamily inet
